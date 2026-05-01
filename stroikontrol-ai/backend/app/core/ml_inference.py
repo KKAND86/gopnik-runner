@@ -130,9 +130,16 @@ class MLInference:
         self._real_cv = None
         self._real_audio = None
         self._mock = None
+        self._sklearn_cv = None
+        self._sklearn_cv_scaler = None
+        self._sklearn_audio = None
+        self._sklearn_audio_scaler = None
+
+        # --- Tier 0: Trained sklearn models (best if available) ---
+        self._load_sklearn_models()
 
         # --- Tier 1: TensorFlow models ---
-        if self._tf_available:
+        if self.cv_model is None and self.audio_model is None and self._tf_available:
             if cv_model_path is None:
                 cv_model_path = MODELS_DIR / "cv" / "tile_defect_classifier.keras"
             if audio_model_path is None:
@@ -140,14 +147,14 @@ class MLInference:
             self._load_tf_models(cv_model_path, audio_model_path)
 
         # --- Tier 2: Real OpenCV / librosa analyzers ---
-        if self.cv_model is None and CV2_AVAILABLE and RealCVAnalyzer:
+        if self.cv_model is None and self._sklearn_cv is None and CV2_AVAILABLE and RealCVAnalyzer:
             try:
                 self._real_cv = RealCVAnalyzer()
                 print("[ML] RealCVAnalyzer loaded (OpenCV)")
             except Exception as e:
                 print(f"[ML] RealCVAnalyzer failed: {e}")
 
-        if self.audio_model is None and LIBROSA_AVAILABLE and RealAudioAnalyzer:
+        if self.audio_model is None and self._sklearn_audio is None and LIBROSA_AVAILABLE and RealAudioAnalyzer:
             try:
                 self._real_audio = RealAudioAnalyzer()
                 print("[ML] RealAudioAnalyzer loaded (librosa)")
@@ -155,10 +162,40 @@ class MLInference:
                 print(f"[ML] RealAudioAnalyzer failed: {e}")
 
         # --- Tier 3: Mock ---
-        if self.cv_model is None and self._real_cv is None:
-            print("[ML] No CV engine available — MockInference ready")
-        if self.audio_model is None and self._real_audio is None:
-            print("[ML] No Audio engine available — MockInference ready")
+        has_cv = self.cv_model or self._sklearn_cv or self._real_cv
+        has_audio = self.audio_model or self._sklearn_audio or self._real_audio
+        if not has_cv or not has_audio:
+            print("[ML] Some engines missing — MockInference ready as fallback")
+
+    def _load_sklearn_models(self):
+        """Load trained scikit-learn models if available."""
+        # CV sklearn model
+        cv_pkl = MODELS_DIR / "cv" / "tile_defect_classifier.pkl"
+        cv_scaler = MODELS_DIR / "cv" / "scaler.pkl"
+        if cv_pkl.exists() and cv_scaler.exists():
+            try:
+                import pickle
+                with open(cv_pkl, 'rb') as f:
+                    self._sklearn_cv = pickle.load(f)
+                with open(cv_scaler, 'rb') as f:
+                    self._sklearn_cv_scaler = pickle.load(f)
+                print("[ML] Sklearn CV model loaded")
+            except Exception as e:
+                print(f"[ML] Sklearn CV load failed: {e}")
+
+        # Audio sklearn model
+        audio_pkl = MODELS_DIR / "audio" / "tile_tap_defect_detector.pkl"
+        audio_scaler = MODELS_DIR / "audio" / "scaler.pkl"
+        if audio_pkl.exists() and audio_scaler.exists():
+            try:
+                import pickle
+                with open(audio_pkl, 'rb') as f:
+                    self._sklearn_audio = pickle.load(f)
+                with open(audio_scaler, 'rb') as f:
+                    self._sklearn_audio_scaler = pickle.load(f)
+                print("[ML] Sklearn Audio model loaded")
+            except Exception as e:
+                print(f"[ML] Sklearn Audio load failed: {e}")
 
     def _load_tf_models(self, cv_path: Path, audio_path: Path):
         cv_path = Path(cv_path)
@@ -178,6 +215,62 @@ class MLInference:
                 print(f"[ML] TF Audio load failed: {e}")
 
     # --- CV inference ------------------------------------------------
+    def _extract_sklearn_cv_features(self, image_path: str) -> np.ndarray:
+        """Extract features matching train_sklearn_models.py format."""
+        img = cv2.imread(image_path)
+        if img is None:
+            return None
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        h, w = gray.shape
+        features = []
+        # Basic stats
+        features.extend([float(np.mean(gray)), float(np.std(gray)), float(np.min(gray)), float(np.max(gray))])
+        # Edge density
+        edges = cv2.Canny(gray, 50, 150)
+        features.append(float(np.sum(edges > 0) / (h * w)))
+        # Edge direction histogram
+        sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)
+        sobely = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)
+        magnitude = np.sqrt(sobelx**2 + sobely**2)
+        angle = np.arctan2(sobely, sobelx) * 180 / np.pi
+        angle_hist, _ = np.histogram(angle[magnitude > 10], bins=8, range=(-180, 180))
+        features.extend(angle_hist.astype(float).tolist())
+        # Texture
+        local_var = cv2.blur(gray.astype(np.float32)**2, (5,5)) - cv2.blur(gray.astype(np.float32), (5,5))**2
+        features.extend([float(np.mean(local_var)), float(np.std(local_var))])
+        # LAB color
+        lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
+        for i in range(3):
+            features.extend([float(np.mean(lab[:,:,i])), float(np.std(lab[:,:,i]))])
+        # Contours
+        contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        features.extend([float(len(contours)), float(np.mean([cv2.contourArea(c) for c in contours]) if contours else 0), float(np.std([cv2.contourArea(c) for c in contours]) if contours else 0)])
+        # FFT
+        fft = np.fft.fft2(gray)
+        fft_mag = np.abs(fft)
+        features.extend([float(np.mean(fft_mag)), float(np.std(fft_mag)), float(np.percentile(fft_mag, 95))])
+        # Laplacian
+        features.append(float(cv2.Laplacian(gray, cv2.CV_64F).var()))
+        # Grid variance
+        grid_h, grid_w = h // 3, w // 3
+        for i in range(3):
+            for j in range(3):
+                patch = gray[i*grid_h:(i+1)*grid_h, j*grid_w:(j+1)*grid_w]
+                features.append(float(np.var(patch)))
+        return np.array(features, dtype=np.float32)
+
+    def _predict_cv_sklearn(self, image_path: str) -> Dict:
+        feat = self._extract_sklearn_cv_features(image_path)
+        if feat is None:
+            return {'error': 'Could not read image'}
+        feat_scaled = self._sklearn_cv_scaler.transform(feat.reshape(1, -1))
+        prob = self._sklearn_cv.predict_proba(feat_scaled)[0][1]
+        return {
+            'defect_probability': float(prob),
+            'prediction': 'defective' if prob > 0.5 else 'normal',
+            'confidence': float(max(prob, 1 - prob)),
+        }
+
     def _predict_cv_tf(self, image_path: str) -> Dict:
         try:
             img = Image.open(image_path).convert('RGB').resize((224, 224))
@@ -195,6 +288,8 @@ class MLInference:
         return self._real_cv.analyze(image_path)
 
     def predict_image(self, image_path: str) -> Dict:
+        if self._sklearn_cv:
+            return self._predict_cv_sklearn(image_path)
         if self.cv_model:
             return self._predict_cv_tf(image_path)
         if self._real_cv:
@@ -205,6 +300,63 @@ class MLInference:
         return [self.predict_image(p) for p in image_paths]
 
     # --- Audio inference ---------------------------------------------
+    def _extract_sklearn_audio_features(self, audio_path: str) -> np.ndarray:
+        """Extract features matching train_sklearn_models.py format."""
+        try:
+            audio, sr = librosa.load(audio_path, sr=44100, mono=True)
+        except Exception:
+            return None
+        if len(audio) < sr * 0.05:
+            return None
+        features = []
+        # RMS
+        rms = librosa.feature.rms(y=audio)[0]
+        features.extend([float(np.mean(rms)), float(np.std(rms)), float(np.max(rms))])
+        # Spectral
+        spec_cent = librosa.feature.spectral_centroid(y=audio, sr=sr)[0]
+        spec_rolloff = librosa.feature.spectral_rolloff(y=audio, sr=sr)[0]
+        spec_bw = librosa.feature.spectral_bandwidth(y=audio, sr=sr)[0]
+        zcr = librosa.feature.zero_crossing_rate(audio)[0]
+        features.extend([float(np.mean(spec_cent)), float(np.std(spec_cent)), float(np.mean(spec_rolloff)), float(np.std(spec_rolloff)), float(np.mean(spec_bw)), float(np.std(spec_bw)), float(np.mean(zcr)), float(np.std(zcr))])
+        # MFCC
+        mfcc = librosa.feature.mfcc(y=audio, sr=sr, n_mfcc=13, n_mels=26, n_fft=2048, hop_length=512)
+        features.extend(np.mean(mfcc, axis=1).tolist())
+        features.extend(np.std(mfcc, axis=1).tolist())
+        delta = librosa.feature.delta(mfcc)
+        features.extend(np.mean(delta, axis=1).tolist())
+        features.extend(np.std(delta, axis=1).tolist())
+        # Contrast + chroma
+        contrast = librosa.feature.spectral_contrast(y=audio, sr=sr)[0]
+        features.extend([float(np.mean(contrast)), float(np.std(contrast))])
+        chroma = librosa.feature.chroma_stft(y=audio, sr=sr)[0]
+        features.extend([float(np.mean(chroma)), float(np.std(chroma))])
+        # Decay
+        peak_idx = np.argmax(rms)
+        decay_50 = np.argmax(rms[peak_idx:] < 0.5 * rms[peak_idx]) if any(rms[peak_idx:] < 0.5 * rms[peak_idx]) else len(rms) - peak_idx
+        decay_10 = np.argmax(rms[peak_idx:] < 0.1 * rms[peak_idx]) if any(rms[peak_idx:] < 0.1 * rms[peak_idx]) else len(rms) - peak_idx
+        features.extend([float(decay_50) * 512 / sr, float(decay_10) * 512 / sr])
+        # Band ratios
+        fft = np.fft.rfft(audio)
+        freqs = np.fft.rfftfreq(len(audio), 1 / sr)
+        power = np.abs(fft) ** 2
+        def band_ratio(low, high):
+            mask = (freqs >= low) & (freqs < high)
+            return float(np.sum(power[mask]) / max(1, np.sum(power)))
+        features.extend([band_ratio(50, 500), band_ratio(500, 2000), band_ratio(2000, 8000)])
+        return np.array(features, dtype=np.float32)
+
+    def _predict_audio_sklearn(self, audio_path: str) -> Dict:
+        feat = self._extract_sklearn_audio_features(audio_path)
+        if feat is None:
+            return {'error': 'Could not read audio'}
+        feat_scaled = self._sklearn_audio_scaler.transform(feat.reshape(1, -1))
+        prob = self._sklearn_audio.predict_proba(feat_scaled)[0][1]
+        return {
+            'debond_probability': float(prob),
+            'prediction': 'debonded' if prob > 0.5 else 'intact',
+            'confidence': float(max(prob, 1 - prob)),
+        }
+
     def _predict_audio_tf(self, audio_path: str) -> Dict:
         if not LIBROSA_TF_AVAILABLE:
             return {'error': 'librosa not installed'}
@@ -236,6 +388,8 @@ class MLInference:
         return self._real_audio.analyze(audio_path)
 
     def predict_audio(self, audio_path: str) -> Dict:
+        if self._sklearn_audio:
+            return self._predict_audio_sklearn(audio_path)
         if self.audio_model:
             return self._predict_audio_tf(audio_path)
         if self._real_audio:

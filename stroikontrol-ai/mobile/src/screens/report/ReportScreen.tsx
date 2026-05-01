@@ -108,10 +108,11 @@ export function ReportScreen() {
     try {
       setLoading(true);
       const res = await reportsApi.export(projectId, 'pdf');
-      setPdfUrl(res.data?.url || null);
-      if (res.data?.url) {
-        // In real app: open PDF viewer or download
-        alert(`PDF готов: ${res.data.url}`);
+      const reportUrl = res.data?.url;
+      setPdfUrl(reportUrl || null);
+
+      if (reportUrl) {
+        alert(`📄 PDF готов!\n\nОткройте в браузере:\nhttp://192.168.100.212:8001${reportUrl}`);
       }
     } catch (e: any) {
       alert('Ошибка генерации PDF: ' + (e.message || 'неизвестная ошибка'));

@@ -1,27 +1,19 @@
 {
-  "model_type": "audio_dual_branch_cnn",
-  "input_shapes": {
-    "mfcc": [
-      39,
-      87,
-      1
-    ],
-    "spectrogram": [
-      128,
-      87,
-      1
-    ]
+  "type": "audio_sklearn",
+  "model": "RandomForestClassifier",
+  "metrics": {
+    "accuracy": 0.9821428571428571,
+    "precision": 0.9927007299270073,
+    "recall": 0.9714285714285714,
+    "f1": 0.9819494584837545,
+    "auc": 0.9991772959183673
   },
+  "feature_count": 72,
+  "train_size": 2240,
+  "test_size": 560,
   "classes": [
     "intact",
     "debonded"
   ],
-  "val_accuracy": 0.9839285612106323,
-  "val_auc": 0.9994239211082458,
-  "val_loss": 0.02346758171916008,
-  "epochs_trained": 17,
-  "training_date": "2026-04-30T00:22:35.022950",
-  "model_path": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\.kimi_openclaw\\workspace\\stroikontrol-ai\\models\\audio\\tile_tap_defect_detector.keras",
-  "framework": "tensorflow",
-  "version": "2.21.0"
+  "created_at": "2026-05-01T23:58:02.520869"
 }
