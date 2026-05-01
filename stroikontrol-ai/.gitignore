@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads & data
+uploads/
+*.db
+*.sqlite
+*.sqlite3
+
+# Models (large files)
+models/**/*.keras
+models/**/*.h5
+models/**/*.pkl
+models/**/*.onnx
+
+# Coverage
+.coverage
+htmlcov/
+
+# Misc
+.openclaw/
