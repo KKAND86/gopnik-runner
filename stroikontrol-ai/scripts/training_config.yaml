@@ -1,0 +1,278 @@
+# StroyKontrol AI — Training Configuration for Real Data
+# This config is loaded by scripts/train_models.py when switching to production data
+
+# =============================================================================
+# DATA SOURCES
+# =============================================================================
+data:
+  # Computer Vision dataset
+  cv:
+    source: "datasets/cv/real-photos"  # Path to real tile photos
+    format: "folder_per_class"         # Options: yolo, folder_per_class, coco
+    classes:
+      - normal
+      - defective
+    
+    # Augmentation settings (Albumentations)
+    augmentation:
+      enabled: true
+      train_transforms:
+        - name: "HorizontalFlip"
+          p: 0.5
+        - name: "VerticalFlip"
+          p: 0.3
+        - name: "RandomRotate90"
+          p: 0.5
+        - name: "RandomBrightnessContrast"
+          brightness_limit: 0.2
+          contrast_limit: 0.2
+          p: 0.5
+        - name: "GaussNoise"
+          var_limit: [10, 50]
+          p: 0.3
+        - name: "ISONoise"
+          p: 0.2
+        - name: "CLAHE"
+          clip_limit: 4.0
+          p: 0.3
+      
+    # Validation transforms (no augmentation)
+    val_transforms: []
+
+  # Audio dataset
+  audio:
+    source: "datasets/audio/real-recordings"  # Path to real audio recordings
+    format: "raw_wav"                         # Options: raw_wav, npz_features
+    
+    # Recording protocol (must match field protocol)
+    protocol:
+      sample_rate: 44100
+      duration_sec: 2.0
+      grid_size: 3
+      taps_per_point: 3
+      pause_between_taps_sec: 2
+      mic_distance_cm: 15
+    
+    # Feature extraction
+    features:
+      mfcc:
+        n_mfcc: 13
+        n_mels: 26
+        n_fft: 2048
+        hop_length: 512
+        pre_emphasis: 0.97
+        delta_order: 2  # 39-D total
+      spectrogram:
+        n_mels: 128
+        n_fft: 2048
+        hop_length: 512
+      cwt:
+        wavelet: "cmor"
+        scales: 128
+
+# =============================================================================
+# MODEL ARCHITECTURE
+# =============================================================================
+model:
+  cv:
+    architecture: "cnn_custom"   # Options: cnn_custom, resnet50, mobilenetv2, efficientnet_b0
+    input_shape: [224, 224, 3]
+    pretrained: false          # Use ImageNet weights (requires internet)
+    dropout: 0.5
+    
+    # Layer config (for cnn_custom)
+    layers:
+      - filters: 32
+        kernel: 3
+        activation: "relu"
+        batch_norm: true
+        max_pool: 2
+        dropout: 0.25
+      - filters: 64
+        kernel: 3
+        activation: "relu"
+        batch_norm: true
+        max_pool: 2
+        dropout: 0.25
+      - filters: 128
+        kernel: 3
+        activation: "relu"
+        batch_norm: true
+        max_pool: 2
+        dropout: 0.25
+    classifier:
+      - units: 128
+        activation: "relu"
+        dropout: 0.5
+    
+  audio:
+    architecture: "dual_branch_cnn"
+    
+    branch_mfcc:
+      conv_layers:
+        - filters: 32
+          kernel: [3, 3]
+          pool: [2, 2]
+          dropout: 0.25
+        - filters: 64
+          kernel: [3, 3]
+          pool: [2, 2]
+          dropout: 0.25
+        - filters: 128
+          kernel: [3, 3]
+          pool: null
+          dropout: 0.25
+      classifier_units: 64
+    
+    branch_spectrogram:
+      conv_layers:
+        - filters: 32
+          kernel: [3, 3]
+          pool: [2, 2]
+          dropout: 0.25
+        - filters: 64
+          kernel: [3, 3]
+          pool: [2, 2]
+          dropout: 0.25
+        - filters: 128
+          kernel: [3, 3]
+          pool: null
+          dropout: 0.25
+      classifier_units: 64
+    
+    fusion:
+      method: "concatenate"   # Options: concatenate, attention, gating
+      hidden_units: 128
+      dropout: 0.5
+
+# =============================================================================
+# TRAINING HYPERPARAMETERS
+# =============================================================================
+training:
+  cv:
+    epochs: 50
+    batch_size: 16
+    learning_rate: 0.001
+    optimizer: "adam"
+    
+    callbacks:
+      early_stopping:
+        monitor: "val_loss"
+        patience: 10
+        restore_best_weights: true
+      reduce_lr:
+        monitor: "val_loss"
+        factor: 0.5
+        patience: 5
+        min_lr: 1.0e-7
+      model_checkpoint:
+        monitor: "val_auc"
+        save_best_only: true
+        mode: "max"
+    
+    class_weight: "balanced"  # Options: balanced, none, custom
+    
+  audio:
+    epochs: 50
+    batch_size: 32
+    learning_rate: 0.001
+    optimizer: "adam"
+    
+    callbacks:
+      early_stopping:
+        monitor: "val_loss"
+        patience: 12
+        restore_best_weights: true
+      reduce_lr:
+        monitor: "val_loss"
+        factor: 0.5
+        patience: 4
+        min_lr: 1.0e-7
+      model_checkpoint:
+        monitor: "val_auc"
+        save_best_only: true
+        mode: "max"
+    
+    class_weight: "balanced"
+
+# =============================================================================
+# EVALUATION
+# =============================================================================
+evaluation:
+  cv:
+    metrics:
+      - accuracy
+      - precision
+      - recall
+      - f1_score
+      - auc
+      - confusion_matrix
+    
+    test_split: 0.15
+    val_split: 0.15
+    
+  audio:
+    metrics:
+      - accuracy
+      - precision
+      - recall
+      - f1_score
+      - auc
+      - confusion_matrix
+    
+    test_split: 0.15
+    val_split: 0.15
+
+# =============================================================================
+# OUTPUT
+# =============================================================================
+output:
+  model_dir: "models/"
+  log_dir: "logs/"
+  checkpoint_dir: "checkpoints/"
+  
+  # Export formats
+  export:
+    - keras
+    - savedmodel
+    - tflite   # For mobile deployment
+    - onnx     # For cross-platform
+
+# =============================================================================
+# HARDWARE
+# =============================================================================
+hardware:
+  device: "auto"      # Options: auto, cpu, gpu, tpu
+  mixed_precision: true
+  
+  # GPU settings
+  gpu:
+    memory_growth: true
+    allow_growth: true
+    limit_memory_mb: null  # null = unlimited
+
+# =============================================================================
+# LOGGING
+# =============================================================================
+logging:
+  level: "INFO"
+  tensorboard: true
+  wandb: false          # Weights & Biases integration
+  mlflow: false         # MLflow tracking
+
+# =============================================================================
+# DEPLOYMENT
+# =============================================================================
+deployment:
+  # Mobile model optimization
+  mobile:
+    quantization: "int8"    # Options: none, fp16, int8, dynamic
+    pruning: false
+    clustering: false
+    
+  # Backend serving
+  backend:
+    batch_size: 1
+    max_latency_ms: 200
+    enable_gpu: false
+    model_warmup: true

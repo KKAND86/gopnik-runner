@@ -1,0 +1,20 @@
+{
+  "model_type": "cv_classifier",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "classes": [
+    "normal",
+    "defective"
+  ],
+  "val_accuracy": 0.949999988079071,
+  "val_auc": 0.9771618843078613,
+  "val_loss": 0.16707441210746765,
+  "epochs_trained": 20,
+  "training_date": "2026-04-30T00:32:52.552023",
+  "model_path": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\.kimi_openclaw\\workspace\\stroikontrol-ai\\models\\cv\\tile_defect_classifier.keras",
+  "framework": "tensorflow",
+  "version": "2.21.0"
+}

@@ -1,0 +1,7022 @@
+[
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_000",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_000_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_001",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_001_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_002",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_002_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_003",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_003_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_004",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_004_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_005",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_005_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_006",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_006_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_007",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_007_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_008",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_008_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_009",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_009_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_010",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_010_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_011",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_011_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_012",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_012_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_013",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_013_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_014",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_014_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_015",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_015_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_016",
+    "condition": "debonded",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_016_debonded\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_017",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_017_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_018",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_018_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      0,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r0_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      1,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r1_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c0_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c0_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      0
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c0_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c1_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c1_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      1
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c1_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 0,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c2_n0.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 1,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c2_n1.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  },
+  {
+    "tile_id": "synth_019",
+    "condition": "intact",
+    "grid_position": [
+      2,
+      2
+    ],
+    "tap_number": 2,
+    "filepath": "datasets\\audio\\recordings\\synth_019_intact\\tap_r2_c2_n2.wav",
+    "type": "tile_tapping",
+    "sample_rate": 44100,
+    "synthetic": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "model_type": "audio_dual_branch_cnn",
+  "input_shapes": {
+    "mfcc": [
+      39,
+      87,
+      1
+    ],
+    "spectrogram": [
+      128,
+      87,
+      1
+    ]
+  },
+  "classes": [
+    "intact",
+    "debonded"
+  ],
+  "val_accuracy": 0.9839285612106323,
+  "val_auc": 0.9994239211082458,
+  "val_loss": 0.02346758171916008,
+  "epochs_trained": 17,
+  "training_date": "2026-04-30T00:22:35.022950",
+  "model_path": "C:\\Users\\\u0421\u0435\u0440\u0433\u0435\u0439\\.kimi_openclaw\\workspace\\stroikontrol-ai\\models\\audio\\tile_tap_defect_detector.keras",
+  "framework": "tensorflow",
+  "version": "2.21.0"
+}

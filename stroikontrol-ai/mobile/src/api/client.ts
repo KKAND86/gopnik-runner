@@ -5,7 +5,7 @@
 import axios from 'axios';
 import { useAuthStore } from '@store/authStore';
 
-const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8001/api/v1';
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://192.168.100.212:8001/api/v1';
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -156,9 +156,10 @@ export const analysisApi = {
     isTest()
       ? delay(300).then(() => {
           const p = testProjects.find((x) => x.id === projectId);
+          // In test mode, immediately return completed results
           const mockResult = {
             project_id: projectId,
-            status: p?.status || 'analyzing',
+            status: 'human_review', // <-- always return final status in test mode
             scene_type: 'bathroom_wall',
             defects: [
               {
@@ -183,6 +184,7 @@ export const analysisApi = {
               prediction: 'warning',
             },
           };
+          if (p) p.status = 'human_review';
           return { data: mockResult };
         })
       : apiClient.get(`/analysis/${projectId}`),
