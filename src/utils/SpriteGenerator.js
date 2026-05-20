@@ -418,6 +418,30 @@ const MAMA = [
   '.......hh.......',
 ];
 
+// ==================== MAGNET (16x20) ====================
+const MAGNET = [
+  '................',
+  '.....mmmmmm.....',
+  '....mmmmmmmm....',
+  '...mmmmmmmmmm...',
+  '...mm......mm...',
+  '...mm......mm...',
+  '...mm......mm...',
+  '...mmmmmmmmmm...',
+  '....mmmmmmmm....',
+  '.....mmmmmm.....',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '......mmmm......',
+  '................',
+];
+
 // ==================== GROUND TEXTURE (32x8 tile) ====================
 const GROUND_TILE = [
   'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
@@ -584,6 +608,7 @@ export function generateAllSprites(scene) {
   renderPixels(scene, 'kefir', KEFIR);
   renderPixels(scene, 'nokia3310', NOKIA);
   renderPixels(scene, 'mama', MAMA);
+  renderPixels(scene, 'magnet', MAGNET);
 
   // Background
   renderPixels(scene, 'ground_tile', GROUND_TILE);

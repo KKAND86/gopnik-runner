@@ -7,7 +7,8 @@ import { GAME } from '../config.js';
 const BOOSTER_TYPES = [
   { key: 'kefir',     effect: 'speed',   label: 'КЕФИР!' },
   { key: 'nokia3310', effect: 'shield',  label: 'NOKIA 3310' },
-  { key: 'mama',      effect: 'repel',   label: 'МАМА С МЕТЛОЙ!' }
+  { key: 'mama',      effect: 'repel',   label: 'МАМА С МЕТЛОЙ!' },
+  { key: 'magnet',    effect: 'magnet',  label: 'МАГНИТ!' }
 ];
 
 export function getRandomBoosterType() {

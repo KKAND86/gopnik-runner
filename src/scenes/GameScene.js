@@ -6,6 +6,7 @@ import { GAME, COLORS } from '../config.js';
 import { generateAllSprites, createAnimations } from '../utils/SpriteGenerator.js';
 import soundManager from '../audio/SoundManager.js';
 import telegramManager from '../utils/TelegramManager.js';
+import ParticleManager from '../utils/ParticleManager.js';
 import Player from '../entities/Player.js';
 import Obstacle from '../entities/Obstacle.js';
 import Gopnik from '../entities/Gopnik.js';
@@ -38,6 +39,13 @@ export default class GameScene extends Phaser.Scene {
     this.startTime = this.time.now;
     this.level = 1;
     this.currentPaletteIdx = -1;
+
+    // Particles + Combo + Magnet
+    this.particles = new ParticleManager(this);
+    this.comboCount = 0;
+    this.comboTimer = null;
+    this.magnetActive = false;
+    this.magnetRadius = 180;
 
     generateAllSprites(this);
     createAnimations(this);
@@ -168,6 +176,11 @@ export default class GameScene extends Phaser.Scene {
     this.distanceText = this.add.text(20, 20, '0 м', style).setScrollFactor(0);
     this.coinsText = this.add.text(20, 55, '0 ₽', style).setScrollFactor(0);
 
+    // Magnet indicator
+    this.magnetIcon = this.add.text(GAME.width - 60, 55, '', {
+      font: '20px monospace'
+    }).setOrigin(1, 0).setScrollFactor(0);
+
     // Mute button
     this.muteBtn = this.add.text(GAME.width - 20, 55, '🔊', {
       font: '20px monospace'
@@ -180,6 +193,10 @@ export default class GameScene extends Phaser.Scene {
     this.speedText = this.add.text(GAME.width - 20, 20, '0 км/ч', {
       font: 'bold 22px monospace', fill: '#f1c40f', stroke: '#000', strokeThickness: 3
     }).setOrigin(1, 0).setScrollFactor(0);
+
+    this.comboText = this.add.text(GAME.width / 2, 55, '', {
+      font: 'bold 22px monospace', fill: '#ff69b4', stroke: '#000', strokeThickness: 3
+    }).setOrigin(0.5, 0).setScrollFactor(0).setVisible(false);
 
     this.levelText = this.add.text(GAME.width / 2, 20, 'УРОВЕНЬ 1', {
       font: 'bold 26px monospace', fill: '#ffffff', stroke: '#000', strokeThickness: 4
@@ -381,9 +398,34 @@ export default class GameScene extends Phaser.Scene {
       if (dist < 35) {
         coin.destroy();
         this.coinsList.splice(i, 1);
-        this.coins++;
+        
+        // Combo system
+        this.comboCount++;
+        const multiplier = Math.min(Math.floor(this.comboCount / 3) + 1, 5);
+        const bonusCoins = multiplier > 1 ? multiplier : 1;
+        this.coins += bonusCoins;
+        
+        // Combo UI
+        if (this.comboCount >= 3) {
+          this.comboText.setText(`COMBO x${multiplier}! 🔥`);
+          this.comboText.setVisible(true);
+          this.tweens.add({
+            targets: this.comboText,
+            scaleX: 1.3, scaleY: 1.3,
+            duration: 150, yoyo: true
+          });
+        }
+        
+        // Reset combo timer
+        if (this.comboTimer) this.comboTimer.remove();
+        this.comboTimer = this.time.delayedCall(2000, () => {
+          this.comboCount = 0;
+          this.comboText.setVisible(false);
+        });
+        
         soundManager.play('coin');
         this.coinsText.setText(this.coins + ' ₽');
+        this.particles.burst('spark', coin.x, coin.y, 8);
 
         this.player.speed = Math.min(this.player.speed + GAME.player.coinBoost, GAME.player.runSpeedMax);
 
@@ -438,6 +480,13 @@ export default class GameScene extends Phaser.Scene {
             }
           }
           this.showFloatingText(b.x, b.y, '👋 МАМА С МЕТЛОЙ!', '#f0f');
+        } else if (type.effect === 'magnet') {
+          this.magnetActive = true;
+          this.time.delayedCall(5000, () => {
+            this.magnetActive = false;
+          });
+          this.showFloatingText(b.x, b.y, '🧲 МАГНИТ!', '#9b59b6');
+          this.particles.burst('magnet', b.x, b.y, 12);
         }
         soundManager.play('booster');
 
@@ -469,6 +518,10 @@ export default class GameScene extends Phaser.Scene {
     if (this.isGameOver) return;
     this.isGameOver = true;
     soundManager.play('gameover');
+    
+    // Death effect
+    this.particles.burst('death', this.player.x, this.player.y, 20);
+    this.cameras.main.shake(300, 0.01);
 
     this.physics.pause();
 
@@ -489,6 +542,10 @@ export default class GameScene extends Phaser.Scene {
   }
 
   restart() {
+    this.particles.clear();
+    this.magnetActive = false;
+    this.comboCount = 0;
+    if (this.comboTimer) this.comboTimer.remove();
     this.scene.restart();
   }
 
@@ -497,12 +554,39 @@ export default class GameScene extends Phaser.Scene {
 
     const dt = delta / 1000;
 
+    // Particles update (uses ms)
+    this.particles.update(delta);
+
+    // Dust trail when grounded
+    if (this.player.isGrounded && !this.player.isDead) {
+      this.particles.trail(this.player.x - 10, this.player.y + 28, 'dust', 60);
+    }
+
+    // Magnet: pull coins
+    if (this.magnetActive) {
+      for (const coin of this.coinsList) {
+        if (!coin || !coin.active) continue;
+        const dx = this.player.x - coin.x;
+        const dy = this.player.y - coin.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < this.magnetRadius && dist > 30) {
+          coin.x += dx * 0.08;
+          coin.y += dy * 0.08;
+          coin.body.x = coin.x;
+          coin.body.y = coin.y;
+        }
+      }
+    }
+
     // Дистанция + скорость + уровень
     this.distance = Math.max(this.distance, this.player.x - GAME.player.startX);
     this.distanceText.setText(Math.floor(this.distance) + ' м');
 
     const kmh = Math.floor(this.player.speed * 0.12);
     this.speedText.setText(kmh + ' км/ч');
+
+    // Magnet indicator
+    this.magnetIcon.setText(this.magnetActive ? '🧲' : '');
 
     // Уровень: каждые 500м + смена палитры
     const newLevel = Math.floor(this.distance / 500) + 1;
@@ -526,6 +610,11 @@ export default class GameScene extends Phaser.Scene {
           b.sprite.setFillStyle(Phaser.Utils.Array.GetRandom(p.buildings));
         }
       }
+    }
+
+    // Shield particles
+    if (this.player.shieldActive && !this.player.isDead) {
+      this.particles.emit('shield', this.player.x, this.player.y, 1, 30);
     }
 
     // Игрок: ускорение
