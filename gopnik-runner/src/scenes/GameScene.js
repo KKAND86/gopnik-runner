@@ -395,7 +395,6 @@ export default class GameScene extends Phaser.Scene {
 
         telegramManager.haptic('light');
       }
-      }
 
       if (coin.x < this.player.x - GAME.width) {
         coin.destroy();
@@ -443,7 +442,6 @@ export default class GameScene extends Phaser.Scene {
         soundManager.play('booster');
 
         telegramManager.haptic('success');
-      }
       }
 
       if (b.x < this.player.x - GAME.width) {

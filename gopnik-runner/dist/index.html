@@ -20,7 +20,11 @@
       justify-content: center;
       align-items: center;
     }
-    canvas { display: block; }
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
     #error-log {
       position: fixed;
       top: 0; left: 0;
@@ -36,12 +40,15 @@
     }
     #error-log.visible { display: block; }
   </style>
+  <!-- Telegram WebApp SDK — загружаем первым, чтобы был готов к старту -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <!-- Phaser загружаем глобально, не через Vite -->
   <script src="./lib/phaser.min.js"></script>
 </head>
 <body>
   <div id="error-log"></div>
   <div id="game-container"></div>
-  <script type="module" src="./src/main.js?v=16"></script>
+  <script type="module" src="./bundle.js"></script>
   <script>
     const errorLog = document.getElementById('error-log');
     window.onerror = function(msg, url, line) {

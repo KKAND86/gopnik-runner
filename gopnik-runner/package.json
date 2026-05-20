@@ -2,13 +2,19 @@
   "name": "gopnik-runner",
   "version": "0.1.0",
   "description": "Telegram Mini App runner — убегаем от гопников после свидания",
+  "type": "module",
   "scripts": {
     "dev": "node server.js",
-    "build": "node build.js"
+    "build": "node build.js",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
     "express": "^5.2.1",
     "phaser": "^3.70.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.4",
+    "gh-pages": "^6.3.0"
   }
 }
