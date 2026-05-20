@@ -110,9 +110,9 @@ class Project(Base):
 
     user = relationship("User", foreign_keys=[user_id], back_populates="projects")
     expert_assigned = relationship("User", foreign_keys=[expert_assigned_id], back_populates="assigned_projects")
-    photos = relationship("Photo", back_populates="project", lazy="selectin")
-    audio_samples = relationship("AudioSample", back_populates="project", lazy="selectin")
-    defects = relationship("Defect", back_populates="project", lazy="selectin")
+    photos = relationship("Photo", back_populates="project", lazy="selectin", cascade="all, delete-orphan")
+    audio_samples = relationship("AudioSample", back_populates="project", lazy="selectin", cascade="all, delete-orphan")
+    defects = relationship("Defect", back_populates="project", lazy="selectin", cascade="all, delete-orphan")
 
 
 class Photo(Base):

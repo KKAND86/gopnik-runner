@@ -5,6 +5,7 @@
 import { GAME, COLORS } from '../config.js';
 import { generateAllSprites, createAnimations } from '../utils/SpriteGenerator.js';
 import soundManager from '../audio/SoundManager.js';
+import telegramManager from '../utils/TelegramManager.js';
 import Player from '../entities/Player.js';
 import Obstacle from '../entities/Obstacle.js';
 import Gopnik from '../entities/Gopnik.js';
@@ -392,9 +393,8 @@ export default class GameScene extends Phaser.Scene {
           duration: 100, yoyo: true
         });
 
-        if (window.Telegram?.WebApp?.HapticFeedback) {
-          window.Telegram.WebApp.HapticFeedback.impactOccurred('light');
-        }
+        telegramManager.haptic('light');
+      }
       }
 
       if (coin.x < this.player.x - GAME.width) {
@@ -442,9 +442,8 @@ export default class GameScene extends Phaser.Scene {
         }
         soundManager.play('booster');
 
-        if (window.Telegram?.WebApp?.HapticFeedback) {
-          window.Telegram.WebApp.HapticFeedback.notificationOccurred('success');
-        }
+        telegramManager.haptic('success');
+      }
       }
 
       if (b.x < this.player.x - GAME.width) {

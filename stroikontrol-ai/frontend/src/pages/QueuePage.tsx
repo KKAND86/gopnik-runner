@@ -7,6 +7,7 @@ import type { QueueItem } from '../types';
 export default function QueuePage() {
   const [items, setItems] = useState<QueueItem[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
   const { logout } = useAuthStore();
   const navigate = useNavigate();
 
@@ -18,8 +19,9 @@ export default function QueuePage() {
     try {
       const res = await queueApi.getQueue();
       setItems(res.data);
-    } catch (e) {
+    } catch (e: any) {
       console.error(e);
+      setError(e.response?.data?.detail || 'Ошибка загрузки очереди');
     } finally {
       setLoading(false);
     }
@@ -52,12 +54,22 @@ export default function QueuePage() {
     <div style={styles.container}>
       <header style={styles.header}>
         <h1 style={styles.headerTitle}>Очередь на проверку</h1>
-        <button style={styles.logoutBtn} onClick={logout}>Выйти</button>
+        <div style={styles.headerActions}>
+          <button style={styles.navBtn} onClick={() => navigate('/projects')}>
+            📁 Проекты
+          </button>
+          <button style={styles.logoutBtn} onClick={logout}>Выйти</button>
+        </div>
       </header>
 
       <div style={styles.content}>
         {loading ? (
           <div style={styles.loading}>Загрузка...</div>
+        ) : error ? (
+          <div style={styles.empty}>
+            <div style={styles.emptyIcon}>⚠️</div>
+            <p>{error}</p>
+          </div>
         ) : items.length === 0 ? (
           <div style={styles.empty}>
             <div style={styles.emptyIcon}>✅</div>
@@ -103,6 +115,15 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
   },
   headerTitle: { fontSize: '24px', fontWeight: 700 },
+  headerActions: { display: 'flex', gap: '12px' },
+  navBtn: {
+    background: 'rgba(255,255,255,0.1)',
+    color: '#fff',
+    border: '1px solid rgba(255,255,255,0.3)',
+    padding: '8px 20px',
+    borderRadius: '6px',
+    cursor: 'pointer',
+  },
   logoutBtn: {
     background: 'rgba(255,255,255,0.1)',
     color: '#fff',

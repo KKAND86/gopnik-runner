@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { useQueryClient } from '@tanstack/react-query';
 import { projectsApi } from '@api/client';
 
 export default function ProjectCreateScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
+  const queryClient = useQueryClient();
   const [title, setTitle] = React.useState('');
   const [roomType, setRoomType] = React.useState('bathroom');
   const [surfaceType, setSurfaceType] = React.useState('wall');
@@ -15,8 +17,10 @@ export default function ProjectCreateScreen() {
     try {
       const res = await projectsApi.create({ title, room_type: roomType, surface_type: surfaceType });
       const projectId = res.data.id;
+      // Invalidate projects cache so HomeScreen refreshes
+      queryClient.invalidateQueries({ queryKey: ['projects'] });
       Alert.alert('Создано', 'Проект создан. Перейти к калибровке?');
-      navigation.navigate('Camera' as never, { projectId, step: 'calibration' } as never);
+      navigation.navigate('Camera', { projectId, step: 'calibration' });
     } catch (e: any) {
       Alert.alert('Ошибка', e.response?.data?.detail || 'Не удалось создать');
     } finally {

@@ -18,6 +18,7 @@ COPY requirements.docker.txt .
 RUN pip install --default-timeout=300 --retries 5 --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-cache-dir -r requirements.docker.txt
 
 COPY app/ ./app/
+COPY models/ ./models/
 
 ENV PYTHONPATH=/app
 EXPOSE 8000

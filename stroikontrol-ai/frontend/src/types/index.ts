@@ -50,6 +50,8 @@ export interface AuthState {
   token: string | null;
   user: { id: string; name: string; user_type: string } | null;
   isAuthenticated: boolean;
+  isTestMode: boolean;
   setToken: (token: string, user: any) => void;
   logout: () => void;
+  enableTestMode: () => void;
 }

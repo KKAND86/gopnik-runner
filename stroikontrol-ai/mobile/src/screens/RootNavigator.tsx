@@ -17,6 +17,8 @@ import { AnalysisScreen } from '@screens/analysis/AnalysisScreen';
 import { ReportScreen } from '@screens/report/ReportScreen';
 import { ProfileScreen } from '@screens/profile/ProfileScreen';
 import { PaymentScreen } from '@screens/payment/PaymentScreen';
+import { ExpertQueueScreen } from '@screens/expert/ExpertQueueScreen';
+import { DisputeScreen } from '@screens/expert/DisputeScreen';
 
 export type RootStackParamList = {
   Auth: undefined;
@@ -28,6 +30,8 @@ export type RootStackParamList = {
   Analysis: { projectId: string };
   Report: { projectId: string };
   Payment: { tariff: string; projectId?: string };
+  ExpertQueue: undefined;
+  Dispute: { projectId: string; defectId: string; defectType: string };
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -63,6 +67,8 @@ export function RootNavigator() {
           <Stack.Screen name="Analysis" component={AnalysisScreen} />
           <Stack.Screen name="Report" component={ReportScreen} />
           <Stack.Screen name="Payment" component={PaymentScreen} />
+          <Stack.Screen name="ExpertQueue" component={ExpertQueueScreen} />
+          <Stack.Screen name="Dispute" component={DisputeScreen} />
         </>
       )}
     </Stack.Navigator>

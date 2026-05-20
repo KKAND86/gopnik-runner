@@ -40,12 +40,14 @@
     }
     #error-log.visible { display: block; }
   </style>
+  <!-- Telegram WebApp SDK — загружаем первым, чтобы был готов к старту -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="./lib/phaser.min.js"></script>
 </head>
 <body>
   <div id="error-log"></div>
   <div id="game-container"></div>
-  <script type="module" src="./src/main.js?v=20"></script>
+  <script type="module" src="./src/main.js?v=21"></script>
   <script>
     const errorLog = document.getElementById('error-log');
     window.onerror = function(msg, url, line) {

@@ -3,7 +3,7 @@
  * Показывает топ из Supabase + личный рекорд
  * Кнопка "Играть" → GameScene
  */
-export default class LeaderboardScene extends Phaser.Scene {
+import telegramManager from '../utils/TelegramManager.js';export default class LeaderboardScene extends Phaser.Scene {
   constructor() {
     super({ key: 'LeaderboardScene' });
   }
@@ -13,6 +13,12 @@ export default class LeaderboardScene extends Phaser.Scene {
     const h = this.scale.height;
 
     this.cameras.main.setBackgroundColor('#1a1a2e');
+
+    // Telegram: показываем BackButton для возврата
+    telegramManager.showBackButton(() => {
+      telegramManager.hideBackButton();
+      this.scene.start('IntroScene');
+    });
 
     // Заголовок
     this.add.text(w / 2, 40, '🏆 ЛИДЕРБОРД', {
@@ -85,15 +91,21 @@ export default class LeaderboardScene extends Phaser.Scene {
       font: 'bold 20px monospace', fill: '#fff'
     }).setOrigin(0.5);
 
-    btnBg.on('pointerdown', () => {
+    const startGame = () => {
+      telegramManager.haptic('medium');
+      telegramManager.hideBackButton();
       this.scene.start('GameScene');
-    });
+    };
+
+    btnBg.on('pointerdown', startGame);
+    telegramManager.showMainButton('▶️ ИГРАТЬ', startGame, '#e74c3c');
 
     // Также кнопка "Меню" → IntroScene
     const menuBtn = this.add.text(20, h - 20, '← Меню', {
       font: '14px monospace', fill: '#888'
     }).setOrigin(0, 1).setInteractive();
     menuBtn.on('pointerdown', () => {
+      telegramManager.hideBackButton();
       this.scene.start('IntroScene');
     });
   }

@@ -97,11 +97,11 @@ class ProjectListResponse(BaseModel):
 class PhotoUploadResponse(BaseModel):
     id: UUID
     original_url: str
-    thumbnail_url: Optional[str]
+    thumbnail_url: Optional[str] = None
     quality_passed: bool
-    blur_score: Optional[float]
-    lux_score: Optional[float]
-    has_glare: Optional[bool]
+    blur_score: Optional[float] = None
+    lux_score: Optional[float] = None
+    has_glare: Optional[bool] = None
 
 
 class AudioUploadResponse(BaseModel):
@@ -135,6 +135,8 @@ class AnalysisResult(BaseModel):
     overall_score: Optional[float]
     processing_time_seconds: float
     human_review_required: bool
+    recommendation: Optional[str] = None
+    combined: Optional[Dict] = None
 
 
 # --- Report ---

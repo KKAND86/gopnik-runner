@@ -20,7 +20,7 @@ const GRID_SIZE = 3;
 
 export function AudioRecordScreen() {
   const route = useRoute<any>();
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const { projectId } = route.params;
 
   const [phase, setPhase] = useState<'background' | 'tapping' | 'done'>('background');

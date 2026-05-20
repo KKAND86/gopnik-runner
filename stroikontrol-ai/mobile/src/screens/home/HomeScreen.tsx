@@ -12,7 +12,7 @@ import {
   RefreshControl,
   Image,
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { useQuery } from '@tanstack/react-query';
 
 import { projectsApi } from '@api/client';
@@ -29,7 +29,7 @@ interface ProjectItem {
 }
 
 export function HomeScreen() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const { user } = useAuthStore();
 
   const {
@@ -44,14 +44,21 @@ export function HomeScreen() {
     },
   });
 
+  // Refetch when screen comes back into focus (hardware back button, swipe back)
+  useFocusEffect(
+    React.useCallback(() => {
+      refetch();
+    }, [refetch])
+  );
+
   const renderItem = ({ item }: { item: ProjectItem }) => (
     <TouchableOpacity
       style={styles.projectCard}
       onPress={() => {
         if (item.status === 'completed') {
-          navigation.navigate('Report' as never, { projectId: item.id } as never);
+          navigation.navigate('Report', { projectId: item.id });
         } else {
-          navigation.navigate('Camera' as never, { projectId: item.id, step: 'photos' } as never);
+          navigation.navigate('Camera', { projectId: item.id, step: 'photos' });
         }
       }}
     >
@@ -67,6 +74,34 @@ export function HomeScreen() {
       {item.report_pdf_url && (
         <Text style={styles.reportLink}>📄 Отчет готов</Text>
       )}
+      <TouchableOpacity
+        style={styles.deleteBtn}
+        onPress={() => {
+          Alert.alert(
+            'Удалить проект?',
+            `Вы уверены, что хотите удалить «${item.title || item.room_type}»?`,
+            [
+              { text: 'Отмена', style: 'cancel' },
+              {
+                text: 'Удалить',
+                style: 'destructive',
+                onPress: async () => {
+                  try {
+                    await projectsApi.deleteProject(item.id);
+                    // Invalidate cache to refresh list
+                    queryClient.invalidateQueries({ queryKey: ['projects'] });
+                    Alert.alert('Удалено', 'Проект удален');
+                  } catch (e: any) {
+                    Alert.alert('Ошибка', 'Не удалось удалить проект');
+                  }
+                },
+              },
+            ]
+          );
+        }}
+      >
+        <Text style={styles.deleteBtnText}>🗑️ Удалить</Text>
+      </TouchableOpacity>
     </TouchableOpacity>
   );
 
@@ -77,6 +112,14 @@ export function HomeScreen() {
           Привет, {user?.name || 'строитель'}!
         </Text>
         <Text style={styles.subtitle}>Ваши проекты</Text>
+        {user?.user_type === 'expert' && (
+          <TouchableOpacity
+            style={styles.expertBtn}
+            onPress={() => navigation.navigate('ExpertQueue')}
+          >
+            <Text style={styles.expertBtnText}>👁️ Очередь на проверку</Text>
+          </TouchableOpacity>
+        )}
       </View>
 
       <FlatList
@@ -97,7 +140,7 @@ export function HomeScreen() {
 
       <TouchableOpacity
         style={styles.fab}
-        onPress={() => navigation.navigate('ProjectCreate' as never)}
+        onPress={() => navigation.navigate('ProjectCreate')}
       >
         <Text style={styles.fabText}>+</Text>
       </TouchableOpacity>
@@ -200,6 +243,19 @@ const styles = StyleSheet.create({
     color: '#2563EB',
     marginTop: 8,
   },
+  deleteBtn: {
+    alignSelf: 'flex-start',
+    marginTop: 12,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+    backgroundColor: '#FEE2E2',
+    borderRadius: 6,
+  },
+  deleteBtnText: {
+    fontSize: 13,
+    color: '#DC2626',
+    fontWeight: '500',
+  },
   empty: {
     alignItems: 'center',
     paddingVertical: 48,
@@ -234,5 +290,18 @@ const styles = StyleSheet.create({
     fontSize: 28,
     color: '#fff',
     fontWeight: '300',
+  },
+  expertBtn: {
+    backgroundColor: '#FEF3C7',
+    paddingVertical: 10,
+    paddingHorizontal: 16,
+    borderRadius: 10,
+    marginTop: 12,
+    alignSelf: 'flex-start',
+  },
+  expertBtnText: {
+    color: '#92400E',
+    fontSize: 14,
+    fontWeight: '600',
   },
 });

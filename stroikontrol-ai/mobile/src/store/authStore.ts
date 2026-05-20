@@ -31,11 +31,11 @@ interface AuthState {
 const TEST_USER: User = {
   id: 'test-user-1',
   phone: '+79990000000',
-  name: 'Демо Пользователь',
-  user_type: 'customer',
+  name: 'Демо Эксперт',
+  user_type: 'expert',
   avatar_url: null,
   consent_given: true,
-  tariff: 'PRO',
+  tariff: 'B2B_PRO',
 };
 
 const TOKEN_KEY = 'auth_token';

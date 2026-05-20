@@ -5,7 +5,7 @@
 import axios from 'axios';
 import { useAuthStore } from '@store/authStore';
 
-const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://192.168.100.212:8001/api/v1';
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://192.168.100.212:8002/api/v1';
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -124,21 +124,30 @@ export const projectsApi = {
     if (isTest()) return delay(600).then(() => ({ data: { success: true, angle } }));
     const form = new FormData();
     form.append('angle', angle);
-    form.append('file', file);
+    form.append('file', file as any);
+    // Let axios set Content-Type with boundary automatically
     return apiClient.post(`/projects/${id}/photos`, form, {
-      headers: { 'Content-Type': 'multipart/form-data' },
+      headers: { 'Content-Type': undefined }, // force axios to auto-detect
     });
   },
   uploadAudio: (id: string, sampleType: string, file: any, gridX?: number, gridY?: number) => {
     if (isTest()) return delay(600).then(() => ({ data: { success: true, sampleType, gridX, gridY } }));
     const form = new FormData();
     form.append('sample_type', sampleType);
-    form.append('file', file);
+    form.append('file', file as any);
     if (gridX !== undefined) form.append('grid_x', String(gridX));
     if (gridY !== undefined) form.append('grid_y', String(gridY));
+    // Let axios set Content-Type with boundary automatically
     return apiClient.post(`/projects/${id}/audio`, form, {
-      headers: { 'Content-Type': 'multipart/form-data' },
+      headers: { 'Content-Type': undefined },
     });
+  },
+  deleteProject: (id: string) => {
+    if (isTest()) {
+      testProjects = testProjects.filter(p => p.id !== id);
+      return delay(400).then(() => ({ data: { success: true } }));
+    }
+    return apiClient.delete(`/projects/${id}`);
   },
 };
 
@@ -207,6 +216,40 @@ export const reportsApi = {
     isTest()
       ? delay(400).then(() => ({ data: { success: true } }))
       : apiClient.post(`/reports/${projectId}/dispute`, { defect_id: defectId, reason }),
+};
+
+// Expert Queue API
+export const queueApi = {
+  getQueue: () =>
+    isTest()
+      ? delay(400).then(() => ({
+          data: {
+            items: [
+              {
+                id: 'queue-1',
+                project_id: 'demo-1',
+                project_title: 'Ванная — кафель на стене',
+                status: 'pending',
+                created_at: new Date(Date.now() - 3600000).toISOString(),
+                priority: 'high',
+              },
+            ],
+            total: 1,
+          },
+        }))
+      : apiClient.get('/experts/queue'),
+  assign: (queueId: string) =>
+    isTest()
+      ? delay(300).then(() => ({ data: { success: true } }))
+      : apiClient.post(`/experts/queue/${queueId}/assign`),
+  reviewDefect: (defectId: string, verdict: string, adjustedValue?: number, notes?: string) =>
+    isTest()
+      ? delay(300).then(() => ({ data: { success: true } }))
+      : apiClient.post(`/experts/defects/${defectId}/review`, {
+          verdict,
+          adjusted_value_mm: adjustedValue,
+          notes,
+        }),
 };
 
 // Payments API

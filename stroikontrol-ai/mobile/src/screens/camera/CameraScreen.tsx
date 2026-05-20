@@ -25,7 +25,7 @@ const ANGLES = [
 
 export function CameraScreen() {
   const route = useRoute<any>();
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const { projectId, step } = route.params;
 
   const [permission, requestPermission] = useCameraPermissions();

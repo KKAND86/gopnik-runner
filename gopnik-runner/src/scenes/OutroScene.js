@@ -4,6 +4,7 @@
  * Кнопка "Ещё раз" → GameScene
  */
 import { generateAllSprites, createAnimations } from '../utils/SpriteGenerator.js';
+import telegramManager from '../utils/TelegramManager.js';
 
 export default class OutroScene extends Phaser.Scene {
   constructor() {
@@ -106,7 +107,7 @@ export default class OutroScene extends Phaser.Scene {
       });
     }
 
-    // Кнопка "Ещё раз"
+    // Кнопка "Ещё раз" (экранная + Telegram MainButton)
     const btnBg = this.add.rectangle(w / 2, h - 60, 180, 44, 0x2ecc71).setInteractive();
     btnBg.setStrokeStyle(2, 0x27ae60);
     const btnText = this.add.text(w / 2, h - 60, 'ЕЩЁ РАЗ', {
@@ -122,9 +123,14 @@ export default class OutroScene extends Phaser.Scene {
       ease: 'Sine.easeInOut'
     });
 
-    btnBg.on('pointerdown', () => {
+    const restartGame = () => {
+      telegramManager.haptic('medium');
+      telegramManager.hideMainButton();
       this.scene.start('GameScene');
-    });
+    };
+
+    btnBg.on('pointerdown', restartGame);
+    telegramManager.showMainButton('🔄 ЕЩЁ РАЗ', restartGame, '#2ecc71');
 
     this.input.once('pointerdown', () => {
       this.scene.start('GameScene');

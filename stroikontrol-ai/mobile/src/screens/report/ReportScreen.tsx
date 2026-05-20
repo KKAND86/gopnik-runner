@@ -216,6 +216,20 @@ export function ReportScreen() {
               {d.regulation_refs?.length > 0 && (
                 <Text style={styles.regText}>Нормативы: {d.regulation_refs.join(', ')}</Text>
               )}
+              
+              {/* Dispute button */}
+              <TouchableOpacity
+                style={styles.disputeBtn}
+                onPress={() =>
+                  navigation.navigate('Dispute', {
+                    projectId,
+                    defectId: d.id,
+                    defectType: DEFECT_NAMES[d.defect_type] || d.defect_type,
+                  })
+                }
+              >
+                <Text style={styles.disputeBtnText}>⚠️ Оспорить дефект</Text>
+              </TouchableOpacity>
             </View>
           ))}
         </View>
@@ -466,5 +480,20 @@ const styles = StyleSheet.create({
   tertiaryButtonText: {
     color: '#6B7280',
     fontSize: 15,
+  },
+  disputeBtn: {
+    marginTop: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    backgroundColor: '#FEF2F2',
+    borderRadius: 8,
+    alignSelf: 'flex-start',
+    borderWidth: 1,
+    borderColor: '#FECACA',
+  },
+  disputeBtnText: {
+    color: '#DC2626',
+    fontSize: 13,
+    fontWeight: '600',
   },
 });

@@ -7,6 +7,7 @@ import IntroScene from './scenes/IntroScene.js';
 import GameScene from './scenes/GameScene.js';
 import OutroScene from './scenes/OutroScene.js';
 import LeaderboardScene from './scenes/LeaderboardScene.js';
+import telegramManager from './utils/TelegramManager.js';
 import { initSupabase } from './utils/supabase.js';
 
 const Phaser = window.Phaser;
@@ -15,21 +16,8 @@ if (!Phaser) {
   throw new Error('Phaser not loaded');
 }
 
-// Telegram: загружаем API динамически только если нужно
-if (window.location.href.includes('t.me') || window.Telegram?.WebApp) {
-  const script = document.createElement('script');
-  script.src = 'https://telegram.org/js/telegram-web-app.js';
-  script.onload = () => {
-    if (window.Telegram?.WebApp) {
-      const tg = window.Telegram.WebApp;
-      tg.ready?.();
-      tg.expand?.();
-      tg.requestFullscreen?.();
-      tg.setBackgroundColor?.('#1a1a1a');
-    }
-  };
-  document.head.appendChild(script);
-}
+// Инициализация Telegram WebApp (до запуска игры)
+telegramManager.init();
 
 const config = {
   type: Phaser.AUTO,

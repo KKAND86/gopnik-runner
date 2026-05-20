@@ -52,11 +52,12 @@ const DEFECT_NAMES: Record<string, string> = {
   chip: 'Скол',
   crack: 'Трещина',
   void: 'Пустота / отслоение',
+  ai_detected: 'Обнаружен дефект (AI)',
 };
 
 export function AnalysisScreen() {
   const route = useRoute<any>();
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const { projectId } = route?.params || {};
 
   const [loading, setLoading] = useState(true);
@@ -134,9 +135,9 @@ export function AnalysisScreen() {
 
   const getVerdictText = (prediction?: string) => {
     switch (prediction) {
-      case 'pass': return '✅ Качество в норме';
-      case 'warning': return '⚠️ Требуется проверка';
-      case 'fail': return '❌ Обнаружены дефекты';
+      case 'pass': return 'Анализируем: качество в норме';
+      case 'warning': return 'Анализируем: требуется проверка';
+      case 'fail': return 'Анализируем: обнаружены дефекты';
       default: return '⏳ Анализируем...';
     }
   };
@@ -146,7 +147,7 @@ export function AnalysisScreen() {
       <View style={styles.center}>
         <ActivityIndicator size="large" color="#2563EB" />
         <Text style={styles.loadingText}>
-          {polling ? 'Анализируем фото и звук...' : 'Запускаем AI...'}
+          {polling ? 'Анализируем фото и звук...' : 'Запускаем анализ...'}
         </Text>
         {polling && (
           <View style={styles.progressBarBg}>
@@ -168,7 +169,7 @@ export function AnalysisScreen() {
     );
   }
 
-  const score = data?.overall_score || 0;
+  const score = data?.combined?.risk_score ?? data?.overall_score ?? 0;
   const prediction = data?.combined?.prediction;
   const defects = data?.defects || [];
   const hasDefects = defects.length > 0;
@@ -177,7 +178,7 @@ export function AnalysisScreen() {
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       {/* Score Card */}
       <View style={[styles.scoreCard, { borderColor: getScoreColor(score) }]}>
-        <Text style={styles.scoreLabel}>Общий балл риска</Text>
+        <Text style={styles.scoreLabel}>Рейтинг качества</Text>
         <View style={styles.scoreCircle}>
           <Animated.Text
             style={[
@@ -278,14 +279,14 @@ export function AnalysisScreen() {
       <View style={styles.actions}>
         <TouchableOpacity
           style={[styles.actionButton, { backgroundColor: '#2563EB' }]}
-          onPress={() => navigation.navigate('Report' as never, { projectId } as never)}
+          onPress={() => navigation.navigate('Report', { projectId })}
         >
           <Text style={styles.actionButtonText}>📄 Отчёт</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={[styles.actionButton, { backgroundColor: '#F3F4F6' }]}
-          onPress={() => navigation.navigate('Home' as never)}
+          onPress={() => navigation.navigate('Home')}
         >
           <Text style={[styles.actionButtonText, { color: '#374151' }]}>🏠 На главную</Text>
         </TouchableOpacity>

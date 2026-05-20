@@ -22,6 +22,25 @@ async def get_current_user(
             detail="Missing authorization header",
         )
     
+    # Demo mode bypass
+    if credentials.credentials == "test-token-demo":
+        result = await db.execute(select(User).where(User.phone == "+79990000000"))
+        user = result.scalar_one_or_none()
+        if user:
+            return user
+        # Create demo user if not exists
+        user = User(
+            phone="+79990000000",
+            name="Демо Эксперт",
+            user_type="expert",
+            consent_given=True,
+            tariff="B2B_PRO",
+        )
+        db.add(user)
+        await db.commit()
+        await db.refresh(user)
+        return user
+    
     payload = decode_token(credentials.credentials)
     if not payload:
         raise HTTPException(

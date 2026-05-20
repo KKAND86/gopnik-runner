@@ -9,14 +9,14 @@ export default function LoginPage() {
   const [step, setStep] = useState<'phone' | 'code'>('phone');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const { setToken } = useAuthStore();
+  const { setToken, enableTestMode } = useAuthStore();
   const navigate = useNavigate();
 
   const handleSendCode = async () => {
     setError('');
     setLoading(true);
     try {
-      await authApi.login(phone, code);
+      await authApi.sendOtp(phone);
       setStep('code');
     } catch (e: any) {
       setError(e.response?.data?.detail || 'Ошибка отправки кода');
@@ -32,12 +32,17 @@ export default function LoginPage() {
       const res = await authApi.login(phone, code);
       const { access_token, user } = res.data;
       setToken(access_token, user);
-      navigate('/queue');
+      navigate('/projects');
     } catch (e: any) {
       setError(e.response?.data?.detail || 'Неверный код');
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleDemoLogin = () => {
+    enableTestMode();
+    navigate('/projects');
   };
 
   return (
@@ -58,6 +63,10 @@ export default function LoginPage() {
             />
             <button style={styles.button} onClick={handleSendCode} disabled={loading}>
               {loading ? 'Отправка...' : 'Получить код'}
+            </button>
+            <div style={styles.divider} />
+            <button style={styles.testButton} onClick={handleDemoLogin} disabled={loading}>
+              🔓 Демо-вход (без SMS)
             </button>
           </>
         ) : (
@@ -139,12 +148,20 @@ const styles: Record<string, React.CSSProperties> = {
     cursor: 'pointer',
     fontSize: '14px',
   },
-  error: {
-    background: '#fee2e2',
-    color: '#dc2626',
-    padding: '12px',
+  divider: {
+    height: '1px',
+    background: '#E0E0E0',
+    margin: '24px 0',
+  },
+  testButton: {
+    width: '100%',
+    padding: '14px',
+    fontSize: '16px',
+    fontWeight: 500,
+    background: '#F5F5F5',
+    color: '#374151',
+    border: '1px solid #D1D5DB',
     borderRadius: '8px',
-    marginBottom: '16px',
-    fontSize: '14px',
+    cursor: 'pointer',
   },
 };

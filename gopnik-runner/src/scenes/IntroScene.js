@@ -4,6 +4,7 @@
  */
 import { generateAllSprites, createAnimations } from '../utils/SpriteGenerator.js';
 import soundManager from '../audio/SoundManager.js';
+import telegramManager from '../utils/TelegramManager.js';
 
 export default class IntroScene extends Phaser.Scene {
   constructor() {
@@ -18,6 +19,17 @@ export default class IntroScene extends Phaser.Scene {
     createAnimations(this);
 
     this.cameras.main.setBackgroundColor('#1a1a2e');
+
+    // Telegram: настройка кнопок и имя пользователя
+    const userName = telegramManager.getDisplayName();
+    const displayName = userName !== 'Гопник' ? `, ${userName}` : '';
+    telegramManager.haptic('light');
+    telegramManager.showMainButton('▶️ ИГРАТЬ', () => {
+      soundManager.ensureContext();
+      telegramManager.haptic('medium');
+      telegramManager.hideMainButton();
+      this.scene.start('GameScene');
+    }, '#2ecc71');
 
     // Фон — облака
     const sky = this.add.tileSprite(w / 2, h / 2, w, h, 'cloud');

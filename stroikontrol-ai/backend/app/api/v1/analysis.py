@@ -54,7 +54,7 @@ async def start_analysis(
     if not project:
         raise HTTPException(status_code=404, detail="Project not found")
 
-    if project.status not in (ProjectStatus.CAPTURING, ProjectStatus.COMPLETED):
+    if project.status not in (ProjectStatus.CAPTURING, ProjectStatus.COMPLETED, ProjectStatus.DRAFT):
         raise HTTPException(status_code=400, detail="Project not ready for analysis")
 
     # Run analysis synchronously (for immediate feedback)
@@ -74,6 +74,8 @@ async def start_analysis(
         overall_score=analysis_output['combined']['risk_score'],
         processing_time_seconds=analysis_output.get('processing_time', 0.0),
         human_review_required=project.status == ProjectStatus.HUMAN_REVIEW,
+        recommendation=analysis_output.get('recommendation'),
+        combined=analysis_output.get('combined'),
     )
 
 
@@ -133,4 +135,6 @@ async def get_analysis_status(
         overall_score=analysis_data.get("combined", {}).get("risk_score"),
         processing_time_seconds=analysis_data.get("processing_time", 0.0),
         human_review_required=project.status == ProjectStatus.HUMAN_REVIEW,
+        recommendation=analysis_data.get("recommendation"),
+        combined=analysis_data.get("combined"),
     )

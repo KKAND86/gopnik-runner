@@ -146,7 +146,6 @@ async def upload_photo(
 
     # Save to disk
     ext = content_type.split("/")[-1].replace("jpeg", "jpg")
-    filename = f"photo_{angle}_{Date.now() if hasattr(Date, 'now') else project_id}_{ext}"
     # Use a simpler filename
     import time
     filename = f"photo_{angle}_{int(time.time())}.jpg"
@@ -221,3 +220,28 @@ async def upload_audio(
         snr_db=None,
         quality_passed=True,
     )
+
+
+@router.delete("/{project_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_project(
+    project_id: UUID,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Delete a project and all associated files."""
+    result = await db.execute(
+        select(Project).where(Project.id == project_id, Project.user_id == current_user.id)
+    )
+    project = result.scalar_one_or_none()
+    if not project:
+        raise HTTPException(status_code=404, detail="Project not found")
+
+    # Delete uploaded files directory
+    project_dir = UPLOAD_DIR / str(project_id)
+    if project_dir.exists():
+        shutil.rmtree(project_dir)
+
+    await db.delete(project)
+    await db.flush()
+
+    return None

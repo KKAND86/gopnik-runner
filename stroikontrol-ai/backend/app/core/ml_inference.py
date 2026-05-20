@@ -12,6 +12,13 @@ from pathlib import Path
 from typing import Dict, List, Optional
 import numpy as np
 
+# OpenCV (needed for _extract_sklearn_cv_features)
+try:
+    import cv2
+    CV2_IMPORT = True
+except ImportError:
+    CV2_IMPORT = False
+
 # TensorFlow
 try:
     import tensorflow as tf
@@ -38,6 +45,11 @@ except ImportError:
 
 BASE_DIR = Path(__file__).parent.parent.parent.parent
 MODELS_DIR = BASE_DIR / "models"
+# Docker compatibility: models may be at /app/models instead of /models
+if not MODELS_DIR.exists():
+    docker_models = Path("/app") / "models"
+    if docker_models.exists():
+        MODELS_DIR = docker_models
 
 # ------------------------------------------------------------------
 # MOCK FALLBACK — random data, only if nothing else works
@@ -276,10 +288,23 @@ class MLInference:
             img = Image.open(image_path).convert('RGB').resize((224, 224))
             img_array = np.array(img) / 255.0
             prob = self.cv_model.predict(np.expand_dims(img_array, axis=0), verbose=0)[0][0]
+            prediction = 'defective' if prob > 0.5 else 'normal'
+            defects = []
+            if prediction == 'defective':
+                severity = 'critical' if prob > 0.85 else 'warning' if prob > 0.6 else 'info'
+                defects = [{
+                    'defect_type': 'ai_detected',
+                    'severity': severity,
+                    'confidence': float(prob),
+                    'bbox': {'x': 0.1, 'y': 0.1, 'width': 0.8, 'height': 0.8},
+                    'measured_value_mm': None,
+                    'threshold_mm': None,
+                }]
             return {
                 'defect_probability': float(prob),
-                'prediction': 'defective' if prob > 0.5 else 'normal',
+                'prediction': prediction,
                 'confidence': float(max(prob, 1 - prob)),
+                'defects': defects,
             }
         except Exception as e:
             return {'error': str(e)}
@@ -288,10 +313,17 @@ class MLInference:
         return self._real_cv.analyze(image_path)
 
     def predict_image(self, image_path: str) -> Dict:
+        # Tier 1: TensorFlow (trained on real data, best accuracy)
+        if self.cv_model and self._tf_available:
+            return self._predict_cv_tf(image_path)
+        # Tier 2: sklearn (fallback)
+        # Tier 1: TensorFlow (trained on real data)
+        if self.cv_model and self._tf_available:
+            return self._predict_cv_tf(image_path)
+        # Tier 2: sklearn (fallback)
         if self._sklearn_cv:
             return self._predict_cv_sklearn(image_path)
-        if self.cv_model:
-            return self._predict_cv_tf(image_path)
+        # Tier 3: Real OpenCV analyzers
         if self._real_cv:
             return self._predict_cv_real(image_path)
         return {'error': 'No CV engine'}
@@ -388,10 +420,13 @@ class MLInference:
         return self._real_audio.analyze(audio_path)
 
     def predict_audio(self, audio_path: str) -> Dict:
+        # Tier 1: TensorFlow (trained on real data, best accuracy)
+        if self.audio_model and self._tf_available:
+            return self._predict_audio_tf(audio_path)
+        # Tier 2: sklearn (fallback)
         if self._sklearn_audio:
             return self._predict_audio_sklearn(audio_path)
-        if self.audio_model:
-            return self._predict_audio_tf(audio_path)
+        # Tier 3: Real librosa analyzers
         if self._real_audio:
             return self._predict_audio_real(audio_path)
         return {'error': 'No Audio engine'}
