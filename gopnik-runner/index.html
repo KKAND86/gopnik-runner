@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Гопник-раннер</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1a1a1a;
+      overflow: hidden;
+      touch-action: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    #game-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+    #error-log {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      max-height: 200px;
+      overflow-y: auto;
+      background: rgba(0,0,0,0.9);
+      color: #ff4444;
+      font: 14px monospace;
+      padding: 10px;
+      z-index: 9999;
+      display: none;
+    }
+    #error-log.visible { display: block; }
+  </style>
+  <script src="./lib/phaser.min.js"></script>
+</head>
+<body>
+  <div id="error-log"></div>
+  <div id="game-container"></div>
+  <script type="module" src="./src/main.js?v=20"></script>
+  <script>
+    const errorLog = document.getElementById('error-log');
+    window.onerror = function(msg, url, line) {
+      errorLog.classList.add('visible');
+      errorLog.innerHTML += '<div>' + msg + ' (строка ' + line + ')</div>';
+    };
+  </script>
+</body>
+</html>

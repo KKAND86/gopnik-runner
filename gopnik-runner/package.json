@@ -1,0 +1,14 @@
+{
+  "name": "gopnik-runner",
+  "version": "0.1.0",
+  "description": "Telegram Mini App runner — убегаем от гопников после свидания",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "express": "^5.2.1",
+    "phaser": "^3.70.0"
+  }
+}
