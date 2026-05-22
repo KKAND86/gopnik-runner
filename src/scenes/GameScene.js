@@ -155,15 +155,34 @@ export default class GameScene extends Phaser.Scene {
   }
 
   setupControls() {
-    const startHold = () => {
+    let isDuckTap = false;
+
+    const startHold = (pointer) => {
       soundManager.ensureContext();
       if (this.isGameOver) { this.restart(); return; }
-      if (!this.player.isGrounded || this.player.isDead || this.player.isDucking) return;
+      if (this.player.isDead || this.player.isDucking) return;
+
+      // Check if this is a duck tap (bottom 30% of screen)
+      if (pointer && pointer.y > GAME.height * 0.7) {
+        if (this.player.isGrounded && !this.player.isDucking) {
+          isDuckTap = true;
+          this.player.duck();
+        }
+        return;
+      }
+
+      // Allow jump from ground or double jump in air
+      if (!this.player.isGrounded && !(this.doubleJumpActive && !this.player.hasDoubleJumped)) return;
+
       this.holdStartTime = this.time.now;
       this.isHolding = true;
     };
 
     const endHold = () => {
+      if (isDuckTap) {
+        isDuckTap = false;
+        return;
+      }
       if (!this.isHolding) return;
       this.isHolding = false;
       if (this.player.isDead) return;
@@ -183,21 +202,16 @@ export default class GameScene extends Phaser.Scene {
     this.input.on('pointerdown', startHold);
     this.input.on('pointerup', endHold);
 
-    this.input.keyboard.on('keydown-SPACE', startHold);
+    this.input.keyboard.on('keydown-SPACE', () => startHold());
     this.input.keyboard.on('keyup-SPACE', endHold);
-    this.input.keyboard.on('keydown-UP', startHold);
+    this.input.keyboard.on('keydown-UP', () => startHold());
     this.input.keyboard.on('keyup-UP', endHold);
-    this.input.keyboard.on('keydown-W', startHold);
+    this.input.keyboard.on('keydown-W', () => startHold());
     this.input.keyboard.on('keyup-W', endHold);
 
     // Duck controls
     this.input.keyboard.on('keydown-DOWN', () => this.player.duck());
     this.input.keyboard.on('keydown-S', () => this.player.duck());
-    this.input.on('pointerdown', (pointer) => {
-      if (pointer.y > GAME.height * 0.7 && this.player.isGrounded && !this.player.isDucking) {
-        this.player.duck();
-      }
-    });
   }
 
   createUI() {
@@ -670,6 +684,17 @@ export default class GameScene extends Phaser.Scene {
     if (this.isGameOver) return;
 
     const dt = delta / 1000;
+
+    // Ground collision detection
+    const onGround = this.player.body.blocked.down || this.player.body.touching.down;
+    if (onGround) {
+      if (!this.player.isGrounded) {
+        this.player.isGrounded = true;
+        this.player.hasDoubleJumped = false;
+      }
+    } else {
+      this.player.isGrounded = false;
+    }
 
     // Particles update (uses ms)
     this.particles.update(delta);

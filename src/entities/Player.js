@@ -20,6 +20,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     this.isGrounded = true;
     this.isDead = false;
     this.isDucking = false;
+    this.hasDoubleJumped = false;
     this.speed = GAME.player.runSpeedMin;
 
     this.play('player_run');
@@ -51,6 +52,8 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
   standUp() {
     if (!this.isDucking || this.isDead) return;
+    // Если не на земле (упали в яму), не встаём — умираем
+    if (!this.isGrounded) return;
     this.isDucking = false;
     this.y -= 16;
     this.setDisplaySize(GAME.player.width, GAME.player.height);

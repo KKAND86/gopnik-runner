@@ -1,3 +1,5 @@
+import { GAME } from '../config.js';
+
 /**
  * AchievementManager — система достижений
  * Сохраняет прогресс в localStorage
@@ -86,5 +88,3 @@ export default class AchievementManager {
     localStorage.removeItem('gopnik_achievements');
   }
 }
-
-import { GAME } from '../config.js';
