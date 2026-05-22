@@ -64,8 +64,9 @@ export default class Player extends Phaser.GameObjects.Sprite {
     }
   }
 
-  jump(isLong = false) {
-    if (!this.isGrounded || this.isDead || this.isDucking) return;
+  jump(isLong = false, doubleJump = false) {
+    if (this.isDead || this.isDucking) return;
+    if (!this.isGrounded && !doubleJump) return;
     if (this.duckTimer) {
       this.duckTimer.remove();
       this.duckTimer = null;
@@ -73,6 +74,7 @@ export default class Player extends Phaser.GameObjects.Sprite {
     const impulse = isLong ? GAME.player.longJumpVelocity : GAME.player.jumpVelocity;
     this.body.setVelocityY(impulse);
     this.isGrounded = false;
+    this.hasDoubleJumped = doubleJump;
   }
 
   die() {

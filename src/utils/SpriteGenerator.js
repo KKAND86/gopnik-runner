@@ -38,6 +38,9 @@ const PALETTE = {
   'z': '#95a5a6',     // bottle (кефир)
   'Z': '#7f8c8d',     // bottle shadow
   'x': '#e74c3c',     // label red
+  'r': '#e74c3c',     // red (кроссовки)
+  'g': '#2ecc71',     // green (подошва)
+  'W': '#cccccc',     // light white (часы)
 };
 
 // ==================== PLAYER (12x20) ====================
@@ -485,6 +488,54 @@ const MAGNET = [
   '................',
 ];
 
+// ==================== SNEAKERS (16x20) ====================
+const SNEAKERS = [
+  '................',
+  '.....rrrrrr.....',
+  '....rrrrrrrr....',
+  '...rrrrrrrrrr...',
+  '...rrrrrrrrrr...',
+  '...rrrrrrrrrr...',
+  '...rrrrrrrrrr...',
+  '....rrrrrrrr....',
+  '.....rrrrrr.....',
+  '.....rrrrrr.....',
+  '...gggggggggg...',
+  '..gggggggggggg..',
+  '..gggggggggggg..',
+  '..gggggggggggg..',
+  '...gggggggggg...',
+  '....gggggggg....',
+  '.....gggggg.....',
+  '......gggg......',
+  '......gggg......',
+  '................',
+];
+
+// ==================== CLOCK (16x20) ====================
+const CLOCK = [
+  '................',
+  '.....wwwwww.....',
+  '....wwwwwwww....',
+  '...wwwwwwwwww...',
+  '...wwwwwwwwww...',
+  '...wwwWwwwWwww...',
+  '...wwwWwWwWwww...',
+  '...wwwWwwwWwww...',
+  '...wwwWWWWWWwww...',
+  '...wwwWwwwWwww...',
+  '...wwwWwwwWwww...',
+  '...wwwWwwwWwww...',
+  '...wwwWwwwWwww...',
+  '...wwwwwwwwww...',
+  '...wwwwwwwwww...',
+  '....wwwwwwww....',
+  '.....wwwwww.....',
+  '......wwww......',
+  '......wwww......',
+  '................',
+];
+
 // ==================== GROUND TEXTURE (32x8 tile) ====================
 const GROUND_TILE = [
   'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
@@ -655,6 +706,8 @@ export function generateAllSprites(scene) {
   renderPixels(scene, 'nokia3310', NOKIA);
   renderPixels(scene, 'mama', MAMA);
   renderPixels(scene, 'magnet', MAGNET);
+  renderPixels(scene, 'sneakers', SNEAKERS);
+  renderPixels(scene, 'clock', CLOCK);
 
   // Background
   renderPixels(scene, 'ground_tile', GROUND_TILE);

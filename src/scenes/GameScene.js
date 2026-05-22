@@ -7,6 +7,7 @@ import { generateAllSprites, createAnimations } from '../utils/SpriteGenerator.j
 import soundManager from '../audio/SoundManager.js';
 import telegramManager from '../utils/TelegramManager.js';
 import ParticleManager from '../utils/ParticleManager.js';
+import AchievementManager from '../utils/AchievementManager.js';
 import Player from '../entities/Player.js';
 import Obstacle from '../entities/Obstacle.js';
 import Gopnik from '../entities/Gopnik.js';
@@ -42,8 +43,16 @@ export default class GameScene extends Phaser.Scene {
     this.level = 1;
     this.currentPaletteIdx = -1;
 
-    // Particles + Combo + Magnet
+    // Particles + Combo + Magnet + Achievements
     this.particles = new ParticleManager(this);
+    this.achievements = new AchievementManager(this);
+    this.runStats = {
+      distance: 0, coins: 0, maxSpeed: 0, maxCombo: 0,
+      usedShield: false, duckCount: 0
+    };
+    this.doubleJumpActive = false;
+    this.slowMoActive = false;
+    this.jumpCount = 0;
     this.comboCount = 0;
     this.comboTimer = null;
     this.magnetActive = false;
@@ -157,12 +166,18 @@ export default class GameScene extends Phaser.Scene {
     const endHold = () => {
       if (!this.isHolding) return;
       this.isHolding = false;
-      if (!this.player.isGrounded || this.player.isDead) return;
+      if (this.player.isDead) return;
 
       const holdDuration = this.time.now - this.holdStartTime;
       const isLongJump = holdDuration > GAME.controls.tapThreshold;
       soundManager.play('jump');
-      this.player.jump(isLongJump);
+
+      if (this.player.isGrounded) {
+        this.player.jump(isLongJump);
+      } else if (this.doubleJumpActive && !this.player.hasDoubleJumped) {
+        this.player.jump(isLongJump, true);
+        this.particles.burst('spark', this.player.x, this.player.y, 6);
+      }
     };
 
     this.input.on('pointerdown', startHold);
@@ -196,6 +211,16 @@ export default class GameScene extends Phaser.Scene {
       font: '20px monospace'
     }).setOrigin(1, 0).setScrollFactor(0);
 
+    // Double jump indicator
+    this.doubleJumpIcon = this.add.text(GAME.width - 85, 55, '', {
+      font: '20px monospace'
+    }).setOrigin(1, 0).setScrollFactor(0);
+
+    // Slow mo indicator
+    this.slowMoIcon = this.add.text(GAME.width - 110, 55, '', {
+      font: '20px monospace'
+    }).setOrigin(1, 0).setScrollFactor(0);
+
     // Mute button
     this.muteBtn = this.add.text(GAME.width - 20, 55, '🔊', {
       font: '20px monospace'
@@ -214,7 +239,15 @@ export default class GameScene extends Phaser.Scene {
       font: 'bold 22px monospace', fill: '#ff69b4', stroke: '#000', strokeThickness: 3
     }).setOrigin(0.5, 0).setScrollFactor(0).setVisible(false);
 
-    // Duck hint
+    // Duck hint: show when beam is approaching
+    let beamNearby = false;
+    for (const obs of this.obstacles) {
+      if (obs.obsType?.key === 'beam' && obs.x > this.player.x + 50 && obs.x < this.player.x + 250) {
+        beamNearby = true;
+        break;
+      }
+    }
+    this.duckHint.setVisible(beamNearby);
     this.duckHint = this.add.text(GAME.width / 2, GAME.height - 30, '↓ ПРИГНИСЬ', {
       font: 'bold 14px monospace', fill: '#ffffff', stroke: '#000', strokeThickness: 3
     }).setOrigin(0.5, 1).setScrollFactor(0).setAlpha(0.6).setVisible(false);
@@ -395,7 +428,8 @@ export default class GameScene extends Phaser.Scene {
         if (playerRight > obsLeft && playerLeft < obsRight &&
             playerBottom > obsTop && playerTop < obsBottom) {
           if (this.player.isDucking) {
-            // Проходим под балкой
+            this.runStats.duckCount++;
+            this.achievements.check(this.runStats);
           } else {
             this.player.die();
             this.triggerGameOver();
@@ -527,6 +561,7 @@ export default class GameScene extends Phaser.Scene {
           this.showFloatingText(b.x, b.y, '⚡ КЕФИР!', '#fff');
         } else if (type.effect === 'shield') {
           this.player.shieldActive = true;
+          this.runStats.usedShield = true;
           this.player.setTint(0x00ffff);
           this.time.delayedCall(3000, () => {
             if (this.player && !this.player.isDead) {
@@ -550,6 +585,22 @@ export default class GameScene extends Phaser.Scene {
           });
           this.showFloatingText(b.x, b.y, '🧲 МАГНИТ!', '#9b59b6');
           this.particles.burst('magnet', b.x, b.y, 12);
+        } else if (type.effect === 'doublejump') {
+          this.doubleJumpActive = true;
+          this.time.delayedCall(5000, () => {
+            this.doubleJumpActive = false;
+          });
+          this.showFloatingText(b.x, b.y, '👟 ДВОЙНОЙ ПРЫЖОК!', '#e74c3c');
+          this.particles.burst('spark', b.x, b.y, 12);
+        } else if (type.effect === 'slowmo') {
+          this.slowMoActive = true;
+          this.physics.world.timeScale = 0.4;
+          this.time.delayedCall(3000, () => {
+            this.slowMoActive = false;
+            this.physics.world.timeScale = 1;
+          });
+          this.showFloatingText(b.x, b.y, '⏱ ЗАМЕДЛЕНИЕ!', '#00ffff');
+          this.particles.burst('shield', b.x, b.y, 12);
         }
         soundManager.play('booster');
 
@@ -607,6 +658,9 @@ export default class GameScene extends Phaser.Scene {
   restart() {
     this.particles.clear();
     this.magnetActive = false;
+    this.doubleJumpActive = false;
+    this.slowMoActive = false;
+    this.physics.world.timeScale = 1;
     this.comboCount = 0;
     if (this.comboTimer) this.comboTimer.remove();
     this.scene.restart();
@@ -650,6 +704,17 @@ export default class GameScene extends Phaser.Scene {
 
     // Magnet indicator
     this.magnetIcon.setText(this.magnetActive ? '🧲' : '');
+
+    // Double jump / slow mo indicators
+    this.doubleJumpIcon.setText(this.doubleJumpActive ? '👟' : '');
+    this.slowMoIcon.setText(this.slowMoActive ? '⏱' : '');
+
+    // Stats for achievements
+    this.runStats.distance = this.distance;
+    this.runStats.coins = this.coins;
+    this.runStats.maxSpeed = Math.max(this.runStats.maxSpeed, kmh);
+    this.runStats.maxCombo = Math.max(this.runStats.maxCombo, this.comboCount);
+    this.achievements.check(this.runStats);
 
     // Уровень: каждые 500м + смена палитры
     const newLevel = Math.floor(this.distance / 500) + 1;
