@@ -17,7 +17,9 @@ const OBSTACLES = [
   { key: 'box', w: 40, h: 25, color: 0xe67e22 },          // Ящик — короткий прыжок
   { key: 'barrel', w: 30, h: 35, color: 0x95a5a6 },      // Бочка — короткий прыжок
   { key: 'crate', w: 35, h: 55, color: 0x8b4513 },       // Ящик-гигант — только длинный
-  { key: 'wall', w: 25, h: 70, color: 0x2c3e50 }          // Стена — только длинный
+  { key: 'wall', w: 25, h: 70, color: 0x2c3e50 },         // Стена — только длинный
+  { key: 'pit', w: 80, h: 40, color: 0x1a1a1a },           // Яма — перепрыгнуть
+  { key: 'beam', w: 100, h: 20, color: 0x5d4037 }          // Балка — только duck
 ];
 
 const LEVEL_PALETTES = [
@@ -147,7 +149,7 @@ export default class GameScene extends Phaser.Scene {
     const startHold = () => {
       soundManager.ensureContext();
       if (this.isGameOver) { this.restart(); return; }
-      if (!this.player.isGrounded || this.player.isDead) return;
+      if (!this.player.isGrounded || this.player.isDead || this.player.isDucking) return;
       this.holdStartTime = this.time.now;
       this.isHolding = true;
     };
@@ -168,6 +170,19 @@ export default class GameScene extends Phaser.Scene {
 
     this.input.keyboard.on('keydown-SPACE', startHold);
     this.input.keyboard.on('keyup-SPACE', endHold);
+    this.input.keyboard.on('keydown-UP', startHold);
+    this.input.keyboard.on('keyup-UP', endHold);
+    this.input.keyboard.on('keydown-W', startHold);
+    this.input.keyboard.on('keyup-W', endHold);
+
+    // Duck controls
+    this.input.keyboard.on('keydown-DOWN', () => this.player.duck());
+    this.input.keyboard.on('keydown-S', () => this.player.duck());
+    this.input.on('pointerdown', (pointer) => {
+      if (pointer.y > GAME.height * 0.7 && this.player.isGrounded && !this.player.isDucking) {
+        this.player.duck();
+      }
+    });
   }
 
   createUI() {
@@ -194,9 +209,15 @@ export default class GameScene extends Phaser.Scene {
       font: 'bold 22px monospace', fill: '#f1c40f', stroke: '#000', strokeThickness: 3
     }).setOrigin(1, 0).setScrollFactor(0);
 
+    // Combo text
     this.comboText = this.add.text(GAME.width / 2, 55, '', {
       font: 'bold 22px monospace', fill: '#ff69b4', stroke: '#000', strokeThickness: 3
     }).setOrigin(0.5, 0).setScrollFactor(0).setVisible(false);
+
+    // Duck hint
+    this.duckHint = this.add.text(GAME.width / 2, GAME.height - 30, '↓ ПРИГНИСЬ', {
+      font: 'bold 14px monospace', fill: '#ffffff', stroke: '#000', strokeThickness: 3
+    }).setOrigin(0.5, 1).setScrollFactor(0).setAlpha(0.6).setVisible(false);
 
     this.levelText = this.add.text(GAME.width / 2, 20, 'УРОВЕНЬ 1', {
       font: 'bold 26px monospace', fill: '#ffffff', stroke: '#000', strokeThickness: 4
@@ -243,7 +264,16 @@ export default class GameScene extends Phaser.Scene {
 
     const type = Phaser.Utils.Array.GetRandom(OBSTACLES);
     const spawnX = this.player.x + GAME.width + Phaser.Math.Between(80, 250);
-    const spawnY = GAME.groundY - type.h / 2;
+    let spawnY = GAME.groundY - type.h / 2;
+
+    // Яма — на уровне земли
+    if (type.key === 'pit') {
+      spawnY = GAME.groundY + 10;
+    }
+    // Балка — в воздухе
+    if (type.key === 'beam') {
+      spawnY = GAME.groundY - 55;
+    }
 
     const obs = new Obstacle(this, spawnX, spawnY, type);
     this.obstacles.push(obs);
@@ -345,6 +375,39 @@ export default class GameScene extends Phaser.Scene {
       const obsRight = obs.x + obs.width / 2;
       const obsTop = obs.y - obs.height / 2;
       const obsBottom = obs.y + obs.height / 2;
+
+      // ЯМА: если на земле и над ямой — падаем
+      if (obs.obsType?.key === 'pit') {
+        if (this.player.isGrounded && this.player.x > obsLeft && this.player.x < obsRight) {
+          this.player.die();
+          this.triggerGameOver();
+          return;
+        }
+        if (obs.x < this.player.x - GAME.width - 200) {
+          obs.destroy();
+          this.obstacles.splice(i, 1);
+        }
+        continue;
+      }
+
+      // БАЛКА: если не duck — умираем
+      if (obs.obsType?.key === 'beam') {
+        if (playerRight > obsLeft && playerLeft < obsRight &&
+            playerBottom > obsTop && playerTop < obsBottom) {
+          if (this.player.isDucking) {
+            // Проходим под балкой
+          } else {
+            this.player.die();
+            this.triggerGameOver();
+            return;
+          }
+        }
+        if (obs.x < this.player.x - GAME.width - 200) {
+          obs.destroy();
+          this.obstacles.splice(i, 1);
+        }
+        continue;
+      }
 
       if (playerRight > obsLeft && playerLeft < obsRight &&
           playerBottom > obsTop && playerTop < obsBottom) {

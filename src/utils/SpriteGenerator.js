@@ -179,6 +179,21 @@ const PLAYER_DEAD = [
   '....kkkk....',
 ];
 
+const PLAYER_DUCK = [
+  '....kkkk....',
+  '...kkkkkk...',
+  '...kwwwwk...',
+  '...kkkkkk...',
+  '...kkkkkk...',
+  '...kwwwwk...',
+  '...kwwwwk...',
+  '...kkkkkk...',
+  '....bbbb....',
+  '...bbbbbb...',
+  '...bbbbbb...',
+  '....bbbb....',
+];
+
 // ==================== GOPNIK (12x20) — красная кепка ====================
 const GOPNIK_RUN1 = [
   '....llll....',
@@ -340,6 +355,34 @@ const WALL = [
   'hhhhhhhhhhhhhhhhhhhh',
   'hhhhhhhhhhhhhhhhhhhh',
   'hhhhhhhhhhhhhhhhhhhh',
+];
+
+// ==================== PIT (16x8) ====================
+const PIT = [
+  '..kkkkkkkkkkkk..',
+  '.kkkkkkkkkkkkkk.',
+  'kk..........kk..',
+  'k............k..',
+  'k............k..',
+  'kk..........kk..',
+  '.kkkkkkkkkkkkkk.',
+  '..kkkkkkkkkkkk..',
+];
+
+// ==================== BEAM (32x12) ====================
+const BEAM = [
+  '..hhhhhhhhhhhhhhhhhhhhhhhhhhhh..',
+  '.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.',
+  'hhHHHHHHHHHHHHHHHHHHHHHHHHHHHHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHhhhhhhhhhhhhhhhhhhhhhhhhhhHhh',
+  'hhHHHHHHHHHHHHHHHHHHHHHHHHHHHHhh',
+  '.hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh.',
 ];
 
 // ==================== KEFIR (12x20) ====================
@@ -590,6 +633,7 @@ export function generateAllSprites(scene) {
   renderPixels(scene, 'player_run4', PLAYER_RUN4);
   renderPixels(scene, 'player_jump', PLAYER_JUMP);
   renderPixels(scene, 'player_dead', PLAYER_DEAD);
+  renderPixels(scene, 'player_duck', PLAYER_DUCK);
 
   // Gopnik frames
   renderPixels(scene, 'gopnik_run1', GOPNIK_RUN1);
@@ -600,6 +644,8 @@ export function generateAllSprites(scene) {
   renderPixels(scene, 'box', BOX);
   renderPixels(scene, 'barrel', BARREL);
   renderPixels(scene, 'wall', WALL);
+  renderPixels(scene, 'pit', PIT);
+  renderPixels(scene, 'beam', BEAM);
 
   // Coin
   renderPixels(scene, 'coin', COIN);
@@ -658,6 +704,17 @@ export function createAnimations(scene) {
         { key: 'gopnik_run2' },
       ],
       frameRate: 8,
+      repeat: -1
+    });
+  }
+
+  if (!scene.anims.exists('player_duck')) {
+    scene.anims.create({
+      key: 'player_duck',
+      frames: [
+        { key: 'player_duck' },
+      ],
+      frameRate: 1,
       repeat: -1
     });
   }
